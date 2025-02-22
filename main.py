@@ -15,6 +15,24 @@ pd.set_option('display.max_columns', None)  # Show all columns
 pd.set_option('display.max_rows', None)  # Show all columns
 pd.set_option('display.width', 0)  # Adjust width to fit content
 
-df = pd.read_csv("data/poop_map.csv")
+df = pd.read_csv("data/obesity.csv")
+
+# Specify the x-axis and y-axis columns
+x_column = "OBJECTID"  # Replace with the actual column name
+y_column = "Obesity"  # Replace with the actual column name
+
+# Plot the data
+plt.figure(figsize=(15,5))
+plt.plot(df[x_column], df[y_column], marker="o", linestyle="-")  # Line plot example
+
+# Labels and title
+plt.xlabel("State")
+plt.ylabel("Obesity(%)")
+plt.title("Obesity by State")
+
+plt.xticks(range(1, 53, 1))  #Sets the ticks the graph counts by
+
+# Show the plot
+plt.show()
 
 print(df)
