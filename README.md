@@ -7,7 +7,7 @@
 
 ## Description
 
-This program uses Mathplotlib and Pandas. It pulls obesity percentage data by state from a .csv file and graphs it
+This program uses Mathplotlib and Pandas. It pulls obesity percentage data by state from a .csv file and graphs it.
 
 ## Getting Started
 
@@ -15,11 +15,6 @@ This program uses Mathplotlib and Pandas. It pulls obesity percentage data by st
 ```
 pip install -r requirements.txt
 ```
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
 
 ### Executing program
 
@@ -38,7 +33,7 @@ Levi Eck
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [matplotlib](https://matplotlib.org/)
+* [Matplotlib](https://matplotlib.org/)
 * [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html)
 * [ChatGPT](https://chatgpt.com/share/67ba1e76-6cfc-8001-9b08-6f209e800f04)
 * 
