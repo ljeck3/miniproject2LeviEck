@@ -16,9 +16,6 @@ states = ['47', '25', '0', '12', '41']
 for i in states:
     cell_value = df.at[int(i), "Obesity"]
     state_name = df.at[int(i), "NAME"]
-    #DEBUG PURPOSES
-    #print(cell_value)
-    #print(state_name)
 
     labels = ['Obese', 'Not Obese']
     sizes = [cell_value, 100-cell_value]
