@@ -7,7 +7,7 @@
 
 ## Description
 
-This program uses Mathplotlib and Pandas. It pulls obesity percentage data by state from a .csv file and graphs it.
+This program uses Mathplotlib and Pandas. It pulls obesity percentage data by state from a .csv file and creates pie charts of the percentages.
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ python main.py
 
 ### Output
 
-This should create .png graphs for obesity data
+It will output 5 png files for the pie charts.
 
 
 ## Authors
@@ -35,5 +35,5 @@ Levi Eck
 Inspiration, code snippets, etc.
 * [Matplotlib](https://matplotlib.org/)
 * [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html)
-* [ChatGPT](https://chatgpt.com/share/67ba1e76-6cfc-8001-9b08-6f209e800f04)
-* 
+* [ChatGPT](https://chatgpt.com/share/67bbcd5c-5148-8001-9ccb-9db8ea76a722)
+* [Data from data.gov](https://catalog.data.gov/dataset/national-obesity-by-state-d765a)
