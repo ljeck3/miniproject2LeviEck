@@ -7,31 +7,25 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-os.makedirs("charts", exist_ok=True)
+os.makedirs("charts", exist_ok=True) #CREATES CHARTS DIRECTORY
 
-pd.set_option('display.max_columns', None)  # Show all columns
-pd.set_option('display.max_rows', None)  # Show all columns
-pd.set_option('display.width', 0)  # Adjust width to fit content
+df = pd.read_csv("data/obesity.csv") #READS CSV FILE
 
-df = pd.read_csv("data/obesity.csv")
+states = ['47', '25', '0', '12', '41']
 
-# Specify the x-axis and y-axis columns
-x_column = "OBJECTID"  # Replace with the actual column name
-y_column = "Obesity"  # Replace with the actual column name
+for i in states:
+    cell_value = df.at[int(i), "Obesity"]
+    state_name = df.at[int(i), "NAME"]
+    #DEBUG PURPOSES
+    #print(cell_value)
+    #print(state_name)
 
-# Plot the data
-plt.figure(figsize=(15,5)) #Sets custom dimensions of graph
-plt.plot(df[x_column], df[y_column], marker="o", linestyle="-")  # Line plot example
+    labels = ['Obese', 'Not Obese']
+    sizes = [cell_value, 100-cell_value]
+    plt.clf()
+    plt.pie(sizes, labels=labels, autopct='%1.1f%%', pctdistance=0.5)
+    plt.title("Obesity Percentage in " + state_name)
+    plt.savefig(f"charts/{state_name}.png") #SAVES CHARTS
 
-# Labels and title
-plt.xlabel("State")
-plt.ylabel("Obesity(%)")
-plt.title("Obesity by State")
-
-plt.xticks(range(1, 53, 1))  #Sets the ticks the graph counts by
-# Save in a folder called charts as PNG files
-plt.savefig(f"charts/Obesity.png")
-
-print(df)
 
 
