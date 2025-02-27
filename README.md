@@ -15,7 +15,7 @@ This program uses Mathplotlib and Pandas. It pulls obesity data by state from a 
 ```
 pip install -r requirements.txt
 ```
-Download the CSV file from data.gov: https://catalog.data.gov/dataset/national-obesity-by-state-d765a
+Download the CSV file from data.gov and place it in the "data" folder of the project: https://catalog.data.gov/dataset/national-obesity-by-state-d765a
 
 ### Executing program
 
